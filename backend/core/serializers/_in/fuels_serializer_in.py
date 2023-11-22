@@ -19,8 +19,10 @@ class FuelsSerializerIn(serializers.Serializer):
         )
 
     def validate(self, data):
-         wind = data.get('wind(%)', 0)
-         if wind < 0 or wind > 100:
-             raise serializers.ValidationError({'wind': 'wind must be between 0 and 100'})
+        wind = data.get('wind(%)', 0)
+        if wind < 0 or wind > 100:
+            raise serializers.ValidationError(
+                {'wind': 'wind must be between 0 and 100'}
+            )
 
-         return data
+        return data
