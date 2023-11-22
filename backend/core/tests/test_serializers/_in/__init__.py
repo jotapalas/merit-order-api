@@ -1,0 +1,3 @@
+from .test_fuels_serializer_in import FuelsSerializerInTestCase
+from .test_powerplant_serializer_in import PowerPlantSerializerInTestCase
+from .test_productionplan_serializer_in import ProductionPlanSerializerInTestCase
